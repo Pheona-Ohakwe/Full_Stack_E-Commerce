@@ -1,10 +1,10 @@
-ex# Fur Baby Boutique E-Commerce Application
+ Fur Baby Boutique E-Commerce Application
 
 Welcome to the Fur Baby Boutique, a comprehensive e-commerce application designed for pet lovers to browse and purchase various pets and pet products. This project combines a JavaScript/React frontend with a Python/Flask backend, providing a seamless user experience for managing products, orders, and customers.
 
 ## Demonstration video of the project
 
-[Watch the video](https://drive.google.com/file/d/1-loV-3SBf7g-k8qvfedN3vyPQUU6oozJ/view?usp=sharing)
+[Watch the video]/(./video/ecommerce_recording.mp4)
 
 ## Usage
 - Customer Interface: Browse products, add them to the cart, and proceed to checkout.
@@ -79,7 +79,7 @@ Welcome to the Fur Baby Boutique, a comprehensive e-commerce application designe
 
 ## Getting Started
 
-1. Clone the repository: git clone <https://github.com/Kayla-Ard/React_E-commerce_Web_Application_JS>
+1. Clone the repository: git clone <https://github.com/Pheona-Ohakwe/Full_Stack_E-Commerce.git>
 2. Install dependencies: Navigate to the e-commerce folder and run npm install for frontend dependencies and pip install -r requirements.txt for backend dependencies.
 3. Start the Flask API: Navigate to the backend directory and run flask run --port 5001.
 4. Start the React app: Navigate to the src folder and run npm start.
@@ -90,7 +90,7 @@ Welcome to the Fur Baby Boutique, a comprehensive e-commerce application designe
 
 # Backend Code Overview
 
-Link to project repository <https://github.com/Kayla-Ard/E_Commerce_API_Online_Shopping_Project>
+Link to project repository <https://github.com/Pheona-Ohakwe/API_Full_Stack_E-Commerce.git)>
 
 ## The backend is organized into the following main components:
 
