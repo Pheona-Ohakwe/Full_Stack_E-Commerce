@@ -1,0 +1,80 @@
+.ordersContainer {
+    padding: 20px;
+    background-color: var(--cream);
+    border: 3px solid var(--space);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px; 
+    margin-bottom: 150px;
+}
+
+.header {
+    color: var(--cream);
+    font-size: 35px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.header2 {
+    color: var(--space);
+    font-size: 24px;
+    text-align: center;
+}
+
+.ordersList {
+    list-style: none;
+    padding: 0;
+}
+
+.ordersListContainer {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.orderItem {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--violet);
+    border: 1px solid var(--space);
+    border-radius: 4px;
+    color: var(--water);
+    text-align: center;
+}
+
+.orderLink {
+    color: var(--water);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.orderLink:hover {
+    font-weight: bolder;
+    color: var(--space);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--space);
+}
+
+.createOrderButton {
+    background-color: var(--water);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--water); 
+    color: var(--cream); 
+    border: 1px solid var(--violet);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.createOrderButton:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--water);
+}
+

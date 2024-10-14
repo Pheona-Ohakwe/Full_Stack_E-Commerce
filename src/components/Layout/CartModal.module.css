@@ -1,0 +1,224 @@
+
+.modalOverlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: var(--cream);
+    color: var(--space);
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80vh;
+    border: 3px solid var(--space);
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    max-height: 80vh; 
+    overflow-y: auto; 
+    margin-bottom: 120px;
+    margin-top: 10px;
+}
+
+.closeButton {
+    background-color: var(--water);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: var(--water);
+    color: var(--cream);
+    border: 1px solid var(--violet);
+    display: flex;
+    position: flex-end;
+}
+
+.closeButton:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--water);
+}
+
+.cartItems {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartItem {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr auto; 
+    gap: 10px; 
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--violet);
+    align-items: center;
+    font-weight: bold;
+    color: var(--space);
+}
+
+.cartItem input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: 1px solid var(--violet);
+    border-radius: 4px;
+}
+
+.subTotal, .tax, .totalPrice {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--space);
+}
+
+.totalPrice {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: red;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modalButtons button {
+    background-color: var(--water);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--water);
+    color: var(--cream);
+    border: 1px solid var(--violet);
+}
+
+.modalButtons button:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--water);
+}
+
+.removeButton {
+    background-color: var(--space);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--cream);
+    border: 1px solid var(--violet);
+}
+
+.removeButton:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--water);
+}
+
+.modalContent h2 {
+    color: var(--space);
+}
+
+.modal {
+    background-color: var(--water); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-self: center;
+    position: center;
+    height: 80vh;
+    width: 60vh;
+}
+
+.modalContent2 {
+    background-color: var(--space); 
+    color: var(--cream);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80vh;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-height: 80vh; 
+    overflow-y: auto;
+    position: center;
+}
+
+.modalContent2 h2 {
+    color: var(--cream); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-height: 60vh;
+}
+
+form label {
+    margin-top: 10px;
+    color: var(--cream); 
+}
+
+form input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--violet); 
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--silver);
+}
+
+.quantityLabel {
+    margin-right: 10px;
+    color: var(--space); 
+}
+
+.quantityInput {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid var(--water);
+    border-radius: 4px;
+    background-color: var(--cream);
+    color: var(--water);
+}
+
+.modalContent3 {
+    background-color: var(--cream); 
+    color: var(--space);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80vh;
+    height: auto;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-height: 80vh; 
+    text-align: center;
+}
+
+.logoimg {
+    width: 250px;
+    height:auto;
+}

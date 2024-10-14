@@ -1,0 +1,102 @@
+
+.adminProducts {
+    padding: 20px;
+    margin-bottom: 150px;
+    color: var(--cream);
+}
+
+.header {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.productForm {
+    margin-bottom: 20px;
+}
+
+.inputField {
+    margin: 10px 0;
+    padding: 8px;
+    width: calc(100% - 20px);
+    border: 1px solid var(--cream);
+    border-radius: 4px;
+    background-color: var(--violet);
+    color: var(--water);
+}
+
+.inputField::placeholder {
+    color: var(--water);
+}
+
+.inputField:focus {
+    outline: 3px solid var(--water);
+}
+
+.submitButton {
+    background-color: var(--water);
+    color: var(--space);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--water); 
+    color: var(--cream); 
+    border: 1px solid var(--violet);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.submitButton:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--cream);
+}
+
+.productList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 22px;
+}
+
+.productItem {
+    padding: 10px;
+    border-bottom: 1px solid var(--violet);
+}
+
+.productDetails {
+    display: inline-block;
+    width: 80%;
+}
+
+.editButton,
+.deleteButton {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.editButton {
+    background-color:var(--silver);
+    color: var(--water);
+}
+
+.editButton:hover {
+    background-color: var(--violet);
+    font-weight: bolder;
+    border: 2px solid var(--cream);
+}
+
+.deleteButton {
+    background-color:var(--violet);
+    color: var(--space);
+}
+
+.deleteButton:hover {
+    background-color: var(--cream);
+    font-weight: bolder;
+    border: 2px solid var(--violet);
+}

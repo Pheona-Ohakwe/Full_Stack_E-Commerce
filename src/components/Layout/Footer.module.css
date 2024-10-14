@@ -1,0 +1,28 @@
+.footer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:var(--space);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--cream);
+    font-size: 18px;
+    z-index: 10;
+    margin-top: 150px;
+}
+
+.socialIcons {
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--cream);
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: translateY(-5px); 
+}

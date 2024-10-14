@@ -1,0 +1,312 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--space);
+    margin-right: 20px;
+}
+
+.iconsContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.navItem:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: var(--violet);
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cream);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 20%;
+    border-radius: 5px;
+    z-index: 5;
+    margin-right: 15px;
+    border: 1px solid var(--violet);
+}
+
+.menu.open {
+    display: flex;
+}
+
+.navItem {
+    margin: 10px 0;
+    text-align: center;
+    color: var(--water);
+    font-weight: bolder;
+}
+
+.searchBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.searchInput {
+    padding: 5px 30px 5px 10px;
+    border: 2px solid var(--space);
+    border-radius: 20px;
+    width: 200px;
+    color: var(--violet);
+    max-width: 300px;
+    background-color: var(--violet);
+    color: var(--water);
+}
+
+.searchInput::placeholder {
+    color: var(--water); 
+}
+
+.searchInput:focus {
+    
+    outline: 2px solid var(--space); 
+}
+
+.searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--water);
+}
+
+.modal {
+    background-color: var(--cream);
+    color: var(--water);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    border-radius: 2px;
+    z-index: 3;
+    border: 1px solid var(--violet);
+}
+
+.addressIcon, .cartIcon {
+    cursor: pointer;
+    position: relative;
+    color: var(--violet);
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.cartIcon {
+    position: relative;
+    margin-right: 20px;
+}
+
+.cartCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    color: var(--water);
+    font-size: 14px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-weight: bolder;
+}
+
+.menuToggle {
+    display: flex;
+    align-items: center;
+    order: 3; 
+    flex: 0 1 auto;
+}
+
+.adminModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.adminModalContent {
+    background: var(--water);
+    color: var(--cream);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60vh; 
+    max-width: 90%;
+    text-align: center;
+    border: 3px solid var(--violet);
+    position: relative;
+}
+
+.adminCloseButton {
+    background-color: var(--space);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--cream);
+    border: 1px solid var(--violet);
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.adminCloseButton:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--water);
+}
+
+.adminInputField {
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid var(--violet);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--space);
+    color: var(--cream);
+}
+
+.adminSubmitButton {
+    background-color: var(--violet);
+    color: var(--water);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.adminSubmitButton:hover {
+    background-color: var(--water);
+    color: var(--violet);
+    font-weight: bold;
+}
+
+
+@media (min-width: 576px) {
+    .navbar {
+        flex-direction: row; 
+        justify-content: space-between; 
+        height: 80px;
+        padding: 10px;
+    }
+
+    .searchBox {
+        flex: 0 1 auto;
+        order: 1; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoContainer {
+        flex: 1;
+        justify-content: flex-start; 
+    }
+
+    .iconsContainer {
+        flex: 1;
+        order: 2; 
+        width: auto; 
+        justify-content: flex-end; 
+    }
+
+    .menuToggle {
+        order: 3; 
+        width: auto; 
+        justify-content: flex-end; 
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logoContainer, .iconsContainer, .menuToggle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order:4;
+    }
+
+    .searchBox {
+        justify-content: center;
+        width: 100%; 
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .iconsContainer {
+        justify-content: center;
+        order: 3;
+    }
+
+    .menu.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+}

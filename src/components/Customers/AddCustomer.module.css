@@ -1,0 +1,60 @@
+.formContainer {
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: var(--cream); 
+    color: var(--space); 
+    position: relative; 
+    z-index: 1; 
+}
+
+.formGroup {
+    margin-bottom: 10px;
+}
+
+.formGroup label {
+    font-weight: bold;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup input[type="phone"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: var(--violet);
+    border: 2px solid var(--space);
+    color: var(--water);
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup input[type="email"]:focus,
+.formGroup input[type="phone"]:focus {
+    outline: none;
+    border: 3px solid var(--space);  
+}
+
+.formGroup input[type="text"]::placeholder,
+.formGroup input[type="email"]::placeholder,
+.formGroup input[type="phone"]::placeholder {
+    color: var(--water);
+}
+
+.submitButton {
+    background-color: var(--water);
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--water); 
+    color: var(--cream); 
+    border: 1px solid var(--violet);
+    width: 100%;
+}
+
+.submitButton:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--water);
+}

@@ -1,0 +1,154 @@
+.formContainer {
+    padding: 10px;
+    background-color: var(--space);
+    color: var(--space);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 150px;
+}
+
+.formWrapper {
+    overflow-y:auto;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.header {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.productList {
+    margin-bottom: 20px; 
+    font-size: 22px;
+}
+
+.customerIDHeader, .dateHeader, .productListHeader {
+    font-size: 28px;
+    color: var(--cream);
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+.formGroup {
+    margin-bottom: 30px;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="date"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: var(--violet);
+    border: 2px solid var(--space);
+    color: var(--water);
+    width: 200px;
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup input[type="date"]:focus {
+    outline: none;
+    border: 3px solid var(--space);
+}
+
+.formGroup input[type="text"]::placeholder,
+.formGroup input[type="date"]::placeholder  {
+    color: var(--water);
+}
+
+
+.submitButton {
+    background-color: var(--water);
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--cream);
+    border: 1px solid var(--violet);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 98%;
+}
+
+.submitButton:hover {
+    background-color: var(--violet);
+    color: var(--water);
+    font-weight: bold;
+    border: 1px solid var(--water);
+}
+
+
+.modal {
+    background-color: var(--cream);
+    color: var(--space);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 5000;
+    border: 2px solid var(--violet);
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    width: 90%;
+    position: fixed;
+    max-width: 500px;
+    overflow-y: auto;
+}
+
+.modalHeader {
+    color: var(--water);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalText {
+    color: var(--space);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.closeButton {
+    background-color: var(--space);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--cream);
+}
+
+.closeButton:hover {
+    background-color: var(--violet);
+    color: var(--space);
+    font-weight: bold;
+    border: 2px solid var(--space);
+}
+
+.backToOrdersContainer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.backToOrdersButton {
+    background-color: var(--water);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--cream);
+    margin-top: 10px;
+    height: 40px;
+    width: auto;
+}
+
+.backToOrdersButton:hover {
+    background-color: var(--violet);
+    color: var(--space);
+    font-weight: bold;
+    border: 2px solid var(--space);
+}
