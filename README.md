@@ -4,7 +4,7 @@ Welcome to the Fur Baby Boutique, a comprehensive e-commerce application designe
 
 ## Demonstration video of the project
 
-[Watch the video]/(./video/ecommerce_recording.mp4)
+![Watch the video](./src/ecommerce_recording.mp4)
 
 ## Usage
 - Customer Interface: Browse products, add them to the cart, and proceed to checkout.
@@ -75,7 +75,7 @@ Welcome to the Fur Baby Boutique, a comprehensive e-commerce application designe
 
 ## Folder Structure
 
-![Folder Structure](src/components/folderStructure.png)
+![Folder Structure](./src/folderStructure.png)
 
 ## Getting Started
 
